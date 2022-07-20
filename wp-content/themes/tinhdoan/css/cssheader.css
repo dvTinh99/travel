@@ -1,0 +1,47 @@
+/* reponsive */
+@media all and (min-width: 992px) {
+  /* .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  } */
+  /* .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  } */
+}
+
+.top_nav {
+  width: 100%;
+  height: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 14px;
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+/* reponsive */
+@media screen and (max-width: 1024px) {
+  #phone_nav {
+    display: none;
+  }
+}
+
+.top_nav p {
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.navigation-top {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar {
+  width: 100%;
+}
+.navbar-nav {
+  text-transform: uppercase;
+  margin-left: 150px;
+}

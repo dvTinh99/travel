@@ -1,0 +1,47 @@
+.background-description {
+  max-height: 160px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px 15px;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 4px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.media-left {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#banner-about {
+  margin-bottom: 2%;
+  text-align: center;
+  padding-top: 20%;
+  background: url(../images/slider-image.jpeg) top / cover no-repeat;
+  /* max-height: 480px; */
+}
+
+/* responsive */
+@media screen and (max-width: 475px) {
+  #banner-about {
+    padding-top: 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactInfo h3 {
+    font-size: 20px;
+  }
+
+  .contactInfo h4 {
+    font-size: 18px;
+  }
+
+  .contactInfo a {
+    font-size: 14px;
+  }
+}
