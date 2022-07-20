@@ -50,40 +50,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="main_nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active"> <a class="nav-link" href="#">Trang chủ </a> </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Tour trong
-                                    nước</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">DU LỊCH MIỀN BẮC</a></li>
-                                    <li><a class="dropdown-item" href="#">DU LỊCH MIỀN TRUNG </a></li>
-                                    <li><a class="dropdown-item" href="#">DU LỊCH MIỀN NAM</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Tour nước ngoài
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">DU LỊCH CHÂU Á</a></li>
-                                    <li><a class="dropdown-item" href="#">DU LỊCH CHÂU ÂU</a></li>
-                                    <li><a class="dropdown-item" href="#">DU LỊCH CHÂU PHI</a></li>
-                                    <li><a class="dropdown-item" href="#">DU LỊCH CHÂU MỸ </a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Dịch vụ
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#"> Thuê xe</a></li>
-                                    <li><a class="dropdown-item" href="#"> Vé máy bay </a></li>
-                                    <li><a class="dropdown-item" href="#"> Bảo hiểm du lịch </a></li>
-                                    <li><a class="dropdown-item" href="#"> Sim du lịch</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#"> Thanh toán </a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"> Liên hệ </a></li>
-                        </ul>
+                        <?php get_template_part('template-parts/menu'); ?>      
                     </div>
                 </div>
             </nav>
