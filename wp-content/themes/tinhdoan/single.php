@@ -6,35 +6,35 @@
 <?php get_header(); ?>
 
 <section class="mainContentSection singlePackage">
-        <div class="container detail-tour-kiritm" style="margin-top: 130px;">
+        <div class="container detail-tour-kiritm" style="margin-top: 155px;">
             <div class="row">
                 <div class="col-md-9 col-sm-12 col-xs-12">
                     <div class="info-tour">
                         <div class="promotion-tour">
-                            <div class="text-promotion-tour" title="Giá tour từ 2.679.000 đ">Giá tour từ 2.679.000 đ
+                            <div class="text-promotion-tour" title="Giá tour từ 2.679.000 đ">Giá tour từ <?php the_field('gia'); ?>
                             </div>
                         </div>
                         <div class="row-info">
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <span class="text-uppercase">Thời gian:</span>
-                                    <span class="text-strong">3 ngày 2 đêm</span>
+                                    <span class="text-strong"><?php the_field('thoi_luong'); ?></span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <span class="text-uppercase">Phương tiện:</span>
                                     <span class="text-strong">
-                                        Đi về bằng xe
+                                    <?php the_field('phuong_tien'); ?>
                                     </span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <span class="text-uppercase">Điểm xuất phát:</span>
-                                    <span class="text-strong">TP. Hồ Chí Minh </span>
+                                    <span class="text-strong"><?php the_field('diem_xuat_phat'); ?> </span>
                                 </div>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <span class="text-uppercase">Điểm đến:</span>
-                                    <span class="text-strong">Phan Thiết</span>
+                                    <span class="text-strong"><?php the_field('diem_den'); ?></span>
                                 </div>
                             </div>
                         </div>
@@ -71,23 +71,23 @@
                                         </div>
                                         <div class="col-md-2 col-sm-3 col-xs-12">
                                             <label>Ngày khởi hành</label>
-                                            <strong>24/07/2022</strong>
+                                            <strong><?php the_field('ngay_khoi_hanh'); ?></strong>
                                         </div>
                                         <div class="col-md-2 col-sm-3 col-xs-12">
                                             <label>Mã Tour</label>
-                                            <strong style="margin-left: -30px;">STN084</strong>
+                                            <strong style="margin-left: -30px;"><?php the_field('ma_tour'); ?></strong>
                                         </div>
                                         <div class="col-md-2 col-sm-2 col-xs-12 price">
                                             <label>Giá</label>
-                                            <strong>2.679.000</strong>
+                                            <strong><?php the_field('price'); ?></strong>
                                         </div>
                                         <div class="col-md-2 col-sm-2 col-xs-12 price">
                                             <label>Giá trẻ em</label>
-                                            <strong>1.340.000</strong>
+                                            <strong><?php the_field('price_child'); ?></strong>
                                         </div>
                                         <div class="col-md-2 col-sm-2 col-xs-12 price">
                                             <label>Giá trẻ sơ sinh</label>
-                                            <strong>0</strong>
+                                            <strong><?php the_field('gia_em_be'); ?></strong>
                                         </div>
                                         <div class="col-md-2 col-sm-12 col-xs-12 packageInfo">
                                             <label>Đặt/Mua tour</label>
@@ -117,60 +117,7 @@
                                         <div class="col-xs-12">
                                             <div class="commonInfo">
                                                 <p></p>
-                                                <p><strong>NGÀY&nbsp;01: TP. HCM - PHAN
-                                                        THIẾT (Ăn sáng, trưa, chiều)</strong><br>
-                                                    Đón quý khách tại văn phòng Lữ hành&nbsp;VERATRAVEL (lúc 06h00
-                                                    sáng tại 45 Lê Thánh Tôn, Quận 1 hoặc lúc 06h30 sáng tại số 1 Nguyễn
-                                                    Chí Thanh, Quận 5), khởi hành đi Bình Thuận. Đến Phan Thiết, vào khu
-                                                    resort Hàm Tiến - Mũi Né nhận phòng. Buổi chiều, quý khách đi vào
-                                                    <strong>Hòn Rơm</strong> tham quan <strong>đồi cát vàng
-                                                    </strong>dưới tác động của gió biển đã tạo nên những hình dạng rất
-                                                    tuyệt vời. Nghỉ đêm tại Mũi Né.
-                                                </p>
-
-                                                <p style="text-align: center;"><img alt="" src="<?php bloginfo('template_directory') ?>/images/diadiemhot.jpg"
-                                                        style="width: 100%;"><strong>Đồi cát vàng</strong></p>
-
-                                                <p><strong>NGÀY&nbsp;02: THAM QUAN PHAN
-                                                        THIẾT&nbsp;(Ăn sáng, chiều)</strong><br>
-                                                    Buổi sáng, quý khách tự do nghỉ dưỡng tại resort. Tự túc ăn trưa.
-                                                    Buổi chiều, xe đưa quý khách đến tham quan <strong>không gian trưng
-                                                        bày nghệ thuật “Làng chài xưa”.</strong> Toàn bộ khu trưng bày
-                                                    có diện tích 1.600m². Đây là không gian trưng bày nghệ thuật và là
-                                                    bảo tàng thu nhỏ, tái hiện lại một phần làng chài xưa của Phan Thiết
-                                                    - Mũi Né cách đây hơn 300 năm. Du khách đến đây sẽ được tham quan
-                                                    làng chài dưới rặng dừa; phố cổ ven sông Cà Ty; nhà ở và nơi sản
-                                                    xuất nước mắm của hàm hộ Phan Thiết; con đường Phan Thiết - Mũi Né
-                                                    xưa; đắm mình vào biển Mũi Né 3D và mua sắm trong không gian chợ quê
-                                                    làng xưa… tận mắt được chứng kiến một làng chài xưa của xứ biển Phan
-                                                    Thiết được tái hiện một cách công phu. Nghỉ đêm tại Mũi Né.</p>
-
-                                                <p style="text-align: center;"><img alt="" src="<?php bloginfo('template_directory') ?>/images/diadiemhot.jpg"
-                                                        style="width: 100%;"><strong>Biển Phan Thiết - Mũi Né</strong>
-                                                </p>
-
-                                                <p><strong>NGÀY&nbsp;03: PHAN THIẾT- TP.
-                                                        HCM&nbsp;(Ăn sáng, trưa)</strong><br>
-                                                    Buổi sáng, quý khách tự do nghỉ dưỡng, tắm biển đến giờ trả phòng.
-                                                    Khởi hành về Tp. HCM. Trên đường về ghé mua sắm đặc sản <strong>Phan
-                                                        Thiết</strong>. Kết thúc chương trình.</p>
-
-                                                <p><strong><em>Ghi chú</em></strong>:<br>
-                                                    <strong><em>- Tuân thủ 5K. Áp dụng quy định TIÊM CHỦNG &amp; KẾT QUẢ
-                                                            TEST COVID&nbsp; theo quy định hiện hành của từng địa
-                                                            phương.</em></strong><br>
-                                                    <strong><em>- Trường hợp trong đoàn có phát sinh ca nghi nhiễm hoặc
-                                                            nhiễm covid 19, quý khách có trách nhiệm phối hợp với
-                                                            VERATRAVEL và chính quyền địa phương để thực hiện các
-                                                            biện pháp cách ly hoặc điều trị theo quy
-                                                            định.</em></strong><br>
-                                                    <strong><em>- Các chi phí phát sinh trong quá trình cách ly điều
-                                                            trị, sẽ không nằm trong chi phí tour, quý khách tự túc chi
-                                                            phí phát sinh</em></strong><br>
-                                                    <em>- Điểm tham quan có thể sắp xếp lại cho phù hợp mà vẫn bảo
-                                                        đảm&nbsp;</em><em>đầy đủ&nbsp;</em><em>nội dung của từng chương
-                                                        trình.</em>
-                                                </p>
+                                                <?= get_the_content(); ?>
                                                 <p></p>
                                             </div>
                                         </div>
