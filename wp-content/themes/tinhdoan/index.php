@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 <!-- slider -->
 <div class="owl-carousel owl-theme">
     <div class="item">
@@ -30,209 +28,19 @@
         </div>
     </div>
 </div>
-<!-- content địa điểm hot-->
-<h1 class="title-content" style=" text-align: center ;">Địa điểm hot *</h1>
-<section class="campus">
-    <div class="row_campus">
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
+<?php get_template_part('template-parts/tour', null, array(
+    'name' => 'Địa điểm hot',
+    'cat' => 'hot',
+))?>
+<?php get_template_part('template-parts/tour', null, array(
+    'name' => 'Tour Trong Nước',
+    'cat' => 'trong-nuoc',
+))?>
+<?php get_template_part('template-parts/tour', null, array(
+    'name' => 'Tour Nước Ngoài',
+    'cat' => 'nuoc-ngoai',
+))?>
 
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- content tour trong nước-->
-<h1 class="title-content">Tour trong nước</h1>
-<section class="campus">
-    <div class="row_campus">
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-    </div>
-    <button id="button_">Xem thêm</button>
-</section>
-
-<!-- content tour nước ngoài-->
-<h1 class="title-content">Tour nước ngoài</h1>
-<section class="campus">
-    <div class="row_campus">
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-        <div class="campus-col">
-            <img src="images/diadiemhot.jpg" alt="">
-            <div class="layer">
-                <h3>
-                    <p style="font-size: 15px;font-weight: 400;">Du lịch Singapore Du lịch
-                        Singapore</p>
-                    <p>Thời gian : 3 ngày 2 đêm</p>
-                    <p>Bắt đầu: 20/02/2022</p>
-                </h3>
-
-            </div>
-        </div>
-    </div>
-    <button id="button_">Xem thêm</button>
-</section>
 
 <div class="container">
     <div class="row">

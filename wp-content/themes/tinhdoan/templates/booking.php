@@ -3,6 +3,15 @@
 * Template Name: booking
 */
 ?>
+<?php 
+    // if(isset($_POST)){
+    //     var_dump($_POST);
+    //     die();
+    // }else{
+    //     echo "false";
+    // }
+
+?>
 <?php get_header(); ?>
 <div class="main-wrapper">
         <!-- PAGE TITLE -->
@@ -85,12 +94,12 @@
                             <form action="" method="POST" role="form" class="form">
                                 <div class="form-group">
                                     <input type="text" name="idtour" class="form-control" id="idtour"
-                                        placeholder="DU LỊCH BUÔN MA THUỘT - BUÔN ĐÔN - KDL SINH THÁI KOTAM [KHỞI HÀNH TỪ BUÔN MA THUỘT ]"
+                                        placeholder="<?= $_GET['name_tour']?>"
                                         readonly>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="idtour" class="form-control" id="idtour"
-                                        placeholder="STN084" readonly>
+                                        placeholder="<?= $_GET['tour_id']?>" readonly>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="nguoilon" class="form-control" id="nguoilon"

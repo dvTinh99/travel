@@ -92,10 +92,14 @@
                                         <div class="col-md-2 col-sm-12 col-xs-12 packageInfo">
                                             <label>Đặt/Mua tour</label>
                                             <div class="action-book">
-                                                <a class="btn btn-buy-tour"
-                                                    href="/booking/book-tour/pax-no/21763?type=buy">
-                                                    Đặt tour
-                                                </a>
+                                                <form method="GET" action="/booking">
+                                                    <input type="hidden" name="tour_id" value="<?php the_field('ma_tour'); ?>">
+                                                    <input type="hidden" name="name_tour" value="<?php the_field('name'); ?>">
+                                                    <button class="btn btn-buy-tour"
+                                                        href="/booking/book-tour/pax-no/21763?type=buy">
+                                                        Đặt tour
+                                                    </button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>
@@ -202,10 +206,27 @@
                     <div class="relatedProduct">
                         <h2>Tour liên quan</h2>
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 col-xs-12">
+                            <?php
+                                $post_id = get_the_ID(); //this will get the post id
+                                $category_object = get_the_category($post_id); //this will get categories
+                                $category_name = $category_object[0]->name; //select category from here
+                                
+                                $args = array(
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => $category_name,
+                                    // 'post__not_in' => array($post_id)
+                                );
+                                $arr_posts = new WP_Query( $args );
+                                
+                                /* Start the Loop */
+                                while ( $arr_posts->have_posts() ) :
+                                    $arr_posts->the_post();
+                                ?>
+                                <div class="col-md-4 col-sm-6 col-xs-12">
                                 <article class="box isotopeSelector box-kiritm box-tour">
                                     <figure>
-                                        <a href="/vi/tour-trong-nuoc/3775/du-lich-phan-thiet-mui-ne-lau-dai-ruou-vang"
+                                        <a href="<?= the_permalink(); ?>"
                                             class="popup-gallery image-box-relative image-box-3x2">
                                             <img width="100%" height="250"
                                                 alt="Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang"
@@ -214,12 +235,12 @@
                                     </figure>
                                     <div class="box-tour-price">
                                         <p class="text">Giá từ</p>
-                                        <p class="price">3.459.000</p>
-                                        <p class="info">3 ngày 2 đêm</p>
+                                        <p class="price"><?= the_field('gia')?></p>
+                                        <p class="info"><?= the_field('thoi_luong')?></p>
                                     </div>
                                     <div class="details-kiritm">
                                         <div class="name-tour-detail">
-                                            <a href="/vi/tour-trong-nuoc/3775/du-lich-phan-thiet-mui-ne-lau-dai-ruou-vang"
+                                            <a href="<?= the_permalink(); ?>"
                                                 data-url="/vi/tour-trong-nuoc/3775/du-lich-phan-thiet-mui-ne-lau-dai-ruou-vang"
                                                 data-id="3775"
                                                 data-name="Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang"
@@ -227,53 +248,19 @@
                                                 data-brand="tour-trong-nuoc" data-list="List" data-position="1"
                                                 class="GAproductClick"
                                                 title="Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang">
-                                                Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang
+                                                <?= the_title(); ?>
                                             </a>
                                         </div>
                                         <div class="bottom-detail">
                                             <div class="info-tour">
-                                                TP. Hồ Chí Minh -
-                                                Phan Thiết </div>
+                                            <?= the_field('diem_xuat_phat'); ?> - <?= the_field('diem_den'); ?></div>
                                         </div>
                                     </div>
                                 </article>
                             </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <article class="box isotopeSelector box-kiritm box-tour">
-                                    <figure>
-                                        <a href="/vi/tour-trong-nuoc/3775/du-lich-phan-thiet-mui-ne-lau-dai-ruou-vang"
-                                            class="popup-gallery image-box-relative image-box-3x2">
-                                            <img width="100%" height="250"
-                                                alt="Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang"
-                                                src="<?php bloginfo('template_directory') ?>/images/diadiemhot.jpg">
-                                        </a>
-                                    </figure>
-                                    <div class="box-tour-price">
-                                        <p class="text">Giá từ</p>
-                                        <p class="price">3.459.000</p>
-                                        <p class="info">3 ngày 2 đêm</p>
-                                    </div>
-                                    <div class="details-kiritm">
-                                        <div class="name-tour-detail">
-                                            <a href="/vi/tour-trong-nuoc/3775/du-lich-phan-thiet-mui-ne-lau-dai-ruou-vang"
-                                                data-url="/vi/tour-trong-nuoc/3775/du-lich-phan-thiet-mui-ne-lau-dai-ruou-vang"
-                                                data-id="3775"
-                                                data-name="Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang"
-                                                data-price="3459000" data-category="Tour Phan Thiết"
-                                                data-brand="tour-trong-nuoc" data-list="List" data-position="1"
-                                                class="GAproductClick"
-                                                title="Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang">
-                                                Du lịch Phan Thiết - Mũi Né - Lâu Đài Rượu Vang
-                                            </a>
-                                        </div>
-                                        <div class="bottom-detail">
-                                            <div class="info-tour">
-                                                TP. Hồ Chí Minh -
-                                                Phan Thiết </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
+                                <?php
+                                endwhile; // End of the loop.?>
+                            
                         </div>
                     </div>
                 </div>
