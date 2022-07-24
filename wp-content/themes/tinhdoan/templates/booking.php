@@ -4,13 +4,7 @@
 */
 ?>
 <?php 
-    // if(isset($_POST)){
-    //     var_dump($_POST);
-    //     die();
-    // }else{
-    //     echo "false";
-    // }
-
+    
 ?>
 <?php get_header(); ?>
 <div class="main-wrapper">
@@ -91,15 +85,15 @@
                     </div>
                     <div class="col-sm-8 col-xs-12">
                         <div class="contactForm">
-                            <form action="" method="POST" role="form" class="form">
+                            <form action="/send-mail/" method="POST">
                                 <div class="form-group">
-                                    <input type="text" name="idtour" class="form-control" id="idtour"
-                                        placeholder="<?= $_GET['name_tour']?>"
+                                    <input type="text" name="nametour" class="form-control" id="nametour"
+                                        value="<?= $_POST['name_tour']?>"
                                         readonly>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="idtour" class="form-control" id="idtour"
-                                        placeholder="<?= $_GET['tour_id']?>" readonly>
+                                        value="<?= $_POST['tour_id']?>" readonly>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="nguoilon" class="form-control" id="nguoilon"
@@ -134,7 +128,7 @@
                                         placeholder="Nội dung"></textarea>
                                 </div>
                         </div>
-                        <button id="button_" style="float: right;">ĐẶT TOUR</button>
+                        <button name="send" id="button_" style="float: right;">ĐẶT TOUR</button>
                         </form>
                     </div>
                 </div>

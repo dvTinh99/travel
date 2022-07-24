@@ -92,7 +92,7 @@
                                         <div class="col-md-2 col-sm-12 col-xs-12 packageInfo">
                                             <label>Đặt/Mua tour</label>
                                             <div class="action-book">
-                                                <form method="GET" action="/booking">
+                                                <form method="POST" action="/booking">
                                                     <input type="hidden" name="tour_id" value="<?php the_field('ma_tour'); ?>">
                                                     <input type="hidden" name="name_tour" value="<?php the_field('name'); ?>">
                                                     <button class="btn btn-buy-tour"
