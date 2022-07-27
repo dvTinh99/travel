@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: car
+* Template Name:
 */
 ?>
 <?php get_header(); ?>
