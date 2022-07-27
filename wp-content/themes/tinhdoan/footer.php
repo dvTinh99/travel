@@ -155,6 +155,44 @@
             </div>
         </div>
     </div>
+    <a href="#" class="to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" />
+        </svg>
+    </a>
+    <style>
+            .bi-chevron-up {
+                font-weight: bold;
+                color: white;
+            }
+
+            .to-top {
+                background: #ff891e;
+                position: fixed;
+                bottom: 16px;
+                left: 32px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32px;
+                color: #1f1f1f;
+                text-decoration: none;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 1s;
+
+            }
+
+            .to-top.active {
+                bottom: 32px;
+                pointer-events: auto;
+                opacity: 1;
+                transition: all 0.4s;
+            }
+        </style>
 </footer>
 
 <!-- menu-mobile -->
@@ -287,6 +325,19 @@
         }
     });
 </script>
+<!-- back  to top -->
+<script>
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
+    })
+</script>
 </body>
 <?php wp_footer(); ?>
+
 </html>
