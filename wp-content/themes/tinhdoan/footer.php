@@ -161,38 +161,38 @@
         </svg>
     </a>
     <style>
-            .bi-chevron-up {
-                font-weight: bold;
-                color: white;
-            }
+        .bi-chevron-up {
+            font-weight: bold;
+            color: white;
+        }
 
-            .to-top {
-                background: #ff891e;
-                position: fixed;
-                bottom: 16px;
-                left: 32px;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 32px;
-                color: #1f1f1f;
-                text-decoration: none;
-                opacity: 0;
-                pointer-events: none;
-                transition: all 1s;
+        .to-top {
+            background: #ff891e;
+            position: fixed;
+            bottom: 16px;
+            left: 32px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #1f1f1f;
+            text-decoration: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 1s;
 
-            }
+        }
 
-            .to-top.active {
-                bottom: 32px;
-                pointer-events: auto;
-                opacity: 1;
-                transition: all 0.4s;
-            }
-        </style>
+        .to-top.active {
+            bottom: 32px;
+            pointer-events: auto;
+            opacity: 1;
+            transition: all 0.4s;
+        }
+    </style>
 </footer>
 
 <!-- menu-mobile -->
@@ -202,72 +202,51 @@
 
 
 <div class="menu-mobile">
-    <ul>
-        <li style="background-color: #007bff;"><a><img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="" srcset=""></a>
-        </li>
-        <li><a>TRANG CHỦ</a>
-        </li>
-        <li><a style="display: flex; justify-items: center; align-items: center;">TOUR TRONG NUÓC &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg> </a>
-        </li>
-        <li><a>Du lịch miền Bác</a></li>
-        <li><a>Du lịch miền Trung</a></li>
-        <li><a>Du lịch miền Nam</a></li>
-
-        <li><a style="display: flex; justify-items: center; align-items: center;">TOUR NUÓC NGOÀI &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                </svg></a>
-        </li>
-        <li><a>Du lịch châu Á</a></li>
-        <li><a>Du lịch châu Âu</a></li>
-        <li><a>Du lịch châu Phi</a></li>
-        <li><a>Du lịch châu Mỹ</a></li>
-
-        <li><a>DỊCH VỤ</a>
-        </li>
-        <li><a>THANH TOÁN</a>
-        </li>
-        <li><a>LIÊN HỆ</a>
-        </li>
-    </ul>
+    <?php get_template_part('template-parts/menu-mobile'); ?>
 </div>
+
 <style>
-    .menu-mobile {
-        position: absolute;
-        top: 0;
-        width: 80%;
-        z-index: 1000;
-        visibility: hidden;
+        .contentmenu {
+            font-weight: 600;
+        }
+
+        .menu-mobile {
+            position: absolute;
+            top: 0;
+            width: 80%;
+            z-index: 1000;
+            visibility: hidden;
+            margin-top: 30px;
+            padding: 9px 0px;
 
 
-    }
+        }
 
-    ._open_menu .menu-mobile {
-        visibility: visible;
-        transform: translateX(0);
-        opacity: 1;
-    }
+        ._open_menu .menu-mobile {
+            visibility: visible;
+            transform: translateX(0);
+            opacity: 1;
+        }
 
-    .menu-mobile ul {
-        width: 100%;
-        background-color: #fff;
-        /* transition: all 300ms;
+        .menu-mobile ul {
+            width: 100%;
+            background-color: #fff;
+            /* transition: all 300ms;
             transform: translateX(0); */
-        transform: translateX(0);
-        transition: all 100ms;
-        /* opacity: 0; */
-    }
+            transform: translateX(0);
+            transition: all 100ms;
+            /* opacity: 0; */
+        }
 
-    .menu-mobile ul li {
-        padding: 10px 20px;
-    }
+        .menu-mobile ul li {
+            padding: 8px 16px;
+        }
 
-    .menu-mobile ul li a {
-        text-decoration: none;
-    }
-</style>
+        .menu-mobile ul li a {
+            text-decoration: none;
+            justify-content: space-between;
+        }
+    </style>
 <!-- js -->
 <script>
     $('.owl-carousel').owlCarousel({
