@@ -6,7 +6,7 @@
                 <div class="col-md-5 col-sm-4 col-xs-12">
                     <div class="info-sgt-box">
                         <div class="info-sgt-logo">
-                            <img class="image-info-footer" src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="image commitment" />
+                            <img style="width: 200px;height: 54px;" class="image-info-footer" src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="image commitment" />
                         </div>
                         <div class="info-sgt-title">
                             Lữ hành , thương hiệu lữ hành hàng đầu Việt Nam<br />
@@ -196,10 +196,6 @@
 </footer>
 
 <!-- menu-mobile -->
-
-
-
-
 
 <div class="menu-mobile">
     <?php get_template_part('template-parts/menu-mobile'); ?>
