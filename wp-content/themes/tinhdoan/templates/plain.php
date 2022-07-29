@@ -225,101 +225,10 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="relatedProduct">
-                            <h2>Tour liên quan</h2>
-                            <div class="row">
-                                <div class="col-sm-4 isotopeSelector">
-                                    <article class="box isotopeSelector box-kiritm box-tour">
-                                        <figure>
-                                            <a href="/vi/tour-nuoc-ngoai/24/du-lich-malaysia-4-ngay-genting"
-                                                class="popup-gallery image-box-relative image-box-3x2">
-                                                <img width="100%" height="250" alt="Du lịch Malaysia 4 ngày [Genting]"
-                                                    src="<?php bloginfo('template_directory') ?>/images/carr.jpg">
-                                            </a>
-                                        </figure>
-                                        <div class="box-tour-price">
-                                            <p class="info">4 ngày 3 đêm</p>
-                                        </div>
-                                        <div class="details-kiritm">
-                                            <div class="name-tour-detail">
-                                                <a href="/vi/tour-nuoc-ngoai/24/du-lich-malaysia-4-ngay-genting"
-                                                    class="GAproductClick" title="Du lịch Malaysia 4 ngày [Genting]">
-                                                    Du lịch Malaysia 4 ngày [Genting]
-                                                </a>
-                                            </div>
-                                            <div class="bottom-detail">
-                                                <div class="info-tour">
-                                                    TP. Hồ Chí Minh -
-                                                    Du lịch Malaysia </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-4 isotopeSelector">
-                                    <article class="box isotopeSelector box-kiritm box-tour">
-                                        <figure>
-                                            <a href="/vi/tour-nuoc-ngoai/1911/du-lich-trieu-tien-bi-an-binh-nhuong-dieu-huong-son-khai-thanh"
-                                                class="popup-gallery image-box-relative image-box-3x2">
-                                                <img width="100%" height="250"
-                                                    alt="Du Lịch Triều Tiên bí ẩn [Bình Nhưỡng - Diệu Hương Sơn - Khai Thành]"
-                                                    src="<?php bloginfo('template_directory') ?>/images/carr.jpg">
-                                            </a>
-                                        </figure>
-                                        <div class="box-tour-price">
-                                            <p class="info">5 ngày 4 đêm</p>
-                                        </div>
-                                        <div class="details-kiritm">
-                                            <div class="name-tour-detail">
-                                                <a href="/vi/tour-nuoc-ngoai/1911/du-lich-trieu-tien-bi-an-binh-nhuong-dieu-huong-son-khai-thanh"
-                                                    class="GAproductClick"
-                                                    title="Du Lịch Triều Tiên bí ẩn [Bình Nhưỡng - Diệu Hương Sơn - Khai Thành]">
-                                                    Du Lịch Triều Tiên bí ẩn [Bình Nhưỡng - Diệu Hương Sơn - Khai
-                                                    Thành]
-                                                </a>
-                                            </div>
-                                            <div class="bottom-detail">
-                                                <div class="info-tour">
-                                                    TP. Hồ Chí Minh -
-                                                    Du lịch Triều Tiên </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="col-sm-4 isotopeSelector">
-                                    <article class="box isotopeSelector box-kiritm box-tour">
-                                        <figure>
-                                            <a href="/vi/tour-nuoc-ngoai/2681/du-lich-ma-roc-casablanca-rabat-chefchaouen-meknes-feserfoud-merzouga-ait-benhaddou-marrakech"
-                                                class="popup-gallery image-box-relative image-box-3x2">
-                                                <img width="100%" height="250"
-                                                    alt="Du lịch Ma rốc [Casablanca - Rabat - Chefchaouen - Meknes - Feserfoud - Merzouga - Ait Benhaddou - Marrakech]"
-                                                    src="<?php bloginfo('template_directory') ?>/images/carr.jpg">
-                                            </a>
-                                        </figure>
-                                        <div class="box-tour-price">
-                                            <p class="info">11 ngày 10 đêm</p>
-                                        </div>
-                                        <div class="details-kiritm">
-                                            <div class="name-tour-detail">
-                                                <a href="/vi/tour-nuoc-ngoai/2681/du-lich-ma-roc-casablanca-rabat-chefchaouen-meknes-feserfoud-merzouga-ait-benhaddou-marrakech"
-                                                    data-url="/vi/tour-nuoc-ngoai/2681/du-lich-ma-roc-casablanca-rabat-chefchaouen-meknes-feserfoud-merzouga-ait-benhaddou-marrakech"
-                                                    data-id="2681"
-                                                    data-name="Du lịch Ma rốc [Casablanca - Rabat - Chefchaouen - Meknes - Feserfoud - Merzouga - Ait Benhaddou - Marrakech]"
-                                                    data-price="0" data-category="Tour Morocco"
-                                                    data-brand="tour-nuoc-ngoai" data-list="List" data-position="3"
-                                                    class="GAproductClick"
-                                                    title="Du lịch Ma rốc [Casablanca - Rabat - Chefchaouen - Meknes - Feserfoud - Merzouga - Ait Benhaddou - Marrakech]">
-                                                    Du lịch Ma rốc [Casablanca - Rabat - Chefchaouen - Meknes -
-                                                    Feserfoud - Merzouga - Ait Benhaddou - Marrakech]
-                                                </a>
-                                            </div>
-                                            <div class="bottom-detail">
-                                                <div class="info-tour">
-                                                    TP. Hồ Chí Minh -
-                                                    Du lịch Morocco </div>
-                                            </div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
+                        <?php get_template_part('template-parts/tour-relative', null, array(
+                            'name' => 'Tour liên quan',
+                            'cat' => 'hot',
+                        )) ?>
                         </div>
                     </div>
                 </div>

@@ -56,20 +56,32 @@ if (isset($_POST['send'])) {
         </div>
     </div>
 </div>
-<?php get_template_part('template-parts/tour', null, array(
-    'name' => 'Địa điểm hot',
-    'cat' => 'hot',
-)) ?>
-<?php get_template_part('template-parts/tour', null, array(
-    'name' => 'Tour Trong Nước',
-    'cat' => 'trong-nuoc',
-)) ?>
-<?php get_template_part('template-parts/tour', null, array(
-    'name' => 'Tour Nước Ngoài',
-    'cat' => 'nuoc-ngoai',
-)) ?>
-
-
+<div class="container">
+    <div class="col-xs-12">
+        <div class="relatedProduct">
+            <?php get_template_part('template-parts/tour', null, array(
+                'name' => 'Địa điểm hot',
+                'cat' => 'hot',
+            )) ?>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="relatedProduct">
+            <?php get_template_part('template-parts/tour', null, array(
+                'name' => 'Tour Trong Nước',
+                'cat' => 'trong-nuoc',
+            )) ?>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="relatedProduct">
+            <?php get_template_part('template-parts/tour', null, array(
+                'name' => 'Tour Nước Ngoài',
+                'cat' => 'nuoc-ngoai',
+            )) ?>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-sm-8 col-xs-12">
@@ -87,7 +99,6 @@ if (isset($_POST['send'])) {
             <div class="col-sm-12 col-xs-6" style="margin-top: 10px;padding: 0;">
                 <a target="_blank" href="https://dichvu.saigontourist.net/">
                     <img width="100%" src="<?php bloginfo('template_directory') ?>/images/banner-web-tai-App.jpg">
-
                 </a>
             </div>
         </div>
