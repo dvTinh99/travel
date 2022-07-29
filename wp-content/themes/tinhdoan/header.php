@@ -44,7 +44,7 @@
             <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="/">
-                        <img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="" srcset="">
+                        <img src="<?php bloginfo('template_directory') ?>/images/logo.png" alt="" srcset="" style="width: 200px;height: 54px;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

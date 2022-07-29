@@ -245,6 +245,7 @@
         .menu-mobile ul li a {
             text-decoration: none;
             justify-content: space-between;
+            color : black;
         }
     </style>
 <!-- js -->
