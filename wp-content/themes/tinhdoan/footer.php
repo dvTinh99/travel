@@ -122,13 +122,12 @@
 
             <p style="text-align: center;">
                 <span style="font-size: 11px;">
-                    © Công ty TNHH Một Thành Viên Dịch vụ Lữ hành VERATRAVEL.<br />
-                    ĐÀ NẴNG.
+                    © Công ty TNHH VERATRAVEL ĐÀ NẴNG.
                 </span>
             </p>
             <h3 style="text-align: center;">Tư vấn &amp; đặt dịch vụ: 0774442555
             </h3>
-            <p style="text-align: center;">Website <strong>veratravel.net</strong> đã <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=36659" target="_blank">được đăng
+            <p style="text-align: center;">Website <strong>veratravel.net</strong> đã <a href="" target="_blank">được đăng
                     ký</a> với Bộ Công Thương</p>
             <p style="text-align: center;">
                 <a href="###" target="_blank">

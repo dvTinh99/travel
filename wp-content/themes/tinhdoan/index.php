@@ -92,13 +92,13 @@ if (isset($_POST['send'])) {
         <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="col-sm-12 col-xs-6" style="padding: 0;">
                 <a target="_blank" href="https://khachhang.saigontourist.net/">
-                    <img width="100%" src="<?php bloginfo('template_directory') ?>/images/Banner-TheThanhVien-01.jpg">
+                    <img width="100%" src="<?php bloginfo('template_directory') ?>/images/du-lich-nuoc-ngoai.jpg">
 
                 </a>
             </div>
             <div class="col-sm-12 col-xs-6" style="margin-top: 10px;padding: 0;">
                 <a target="_blank" href="https://dichvu.saigontourist.net/">
-                    <img width="100%" src="<?php bloginfo('template_directory') ?>/images/banner-web-tai-App.jpg">
+                    <img width="100%" height="174" src="<?php bloginfo('template_directory') ?>/images/du-lich2.jpg">
                 </a>
             </div>
         </div>
