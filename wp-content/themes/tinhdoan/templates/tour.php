@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="col-md-2 col-sm-3 col-xs-12">
                                             <label>Mã Tour</label>
-                                            <strong style="margin-left: -30px;">STN084</strong>
+                                            <strong>STN084</strong>
                                         </div>
                                         <div class="col-md-2 col-sm-2 col-xs-12 price">
                                             <label>Giá</label>

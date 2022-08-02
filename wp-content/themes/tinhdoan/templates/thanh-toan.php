@@ -40,14 +40,34 @@
                                 <h4 style="margin: 0 0 10px;">Thanh toán bằng Thẻ Tín Dụng</h4>
                                 <div class="description">Sau khi đặt vé và thanh toán thành công, Lữ
                                     hành VERATRAVEL sẽ gửi vé điện tử của Quý khách qua email.</div>
-                                <i class="fa fa-chevron-down"></i>
-                                <i class="fa fa-check"></i>
                             </label>
                             <div class="content" id="OnePayQuocTe">
                                 <p>VERATRAVEL chấp nhận thanh toán dịch vụ bằng các loại thẻ tín dụng .
                                 </p>
                                 <p> Hiện tại chúng tôi đang thanh toán trên hai số tài khoản :</p>
-                                ...............
+                                
+                                <table border="1px" style="width: 100%;">
+                                    <tr>
+                                        <td>Thông tin</td>
+                                        <td>Tài khoản 1</td>
+                                        <td>Tài khoản 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Số tài khoản</td>
+                                        <td>19033805712011</td>
+                                        <td>413129934700002</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tên ngân hàng</td>
+                                        <td>Techcombank</td>
+                                        <td>NH Nam A</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tên chủ thẻ</td>
+                                        <td>Hồ Tiến Sỹ</td>
+                                        <td>Công ty TNHH VeraTravel</td>
+                                    </tr>
+                                </table>
                                 <br />
                                 <p><img alt="" src="<?php bloginfo('template_directory') ?>/images/thetindung.gif" style="width: 90%;"></p>
                                 <br />

@@ -70,7 +70,7 @@
                                     </div>
                                     <div class="col-md-2 col-sm-3 col-xs-12">
                                         <label>Mã Tour</label>
-                                        <strong style="margin-left: -30px;"><?php the_field('ma_tour'); ?></strong>
+                                        <strong><?php the_field('ma_tour'); ?></strong>
                                     </div>
                                     <div class="col-md-2 col-sm-2 col-xs-12 price">
                                         <label>Giá</label>

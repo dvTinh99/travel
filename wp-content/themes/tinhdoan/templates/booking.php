@@ -38,7 +38,7 @@
                 <div class="row">
                     <div class="col-sm-4 col-xs-12">
                         <div class="contactInfo">
-                            <h3>Công ty TNHH Một Thành Viên Dịch vụ Lữ hành VERATRAVEL</h3>
+                            <h3>Công ty TNHH VERATRAVEL</h3>
                             <div class="media">
                                 <a class="media-left" href="#">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
