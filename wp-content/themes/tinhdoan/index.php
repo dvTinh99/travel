@@ -10,7 +10,7 @@ if (isset($_POST['send'])) {
         'Số điện thoại : ' . $_POST['phone'] . ' <br> ' .
         'Địa chỉ : ' . $_POST['address'] . ' <br> ' .
         'Lời nhắn : ' . $_POST['message'] . ' <br> ';
-    $to = 'dvtinh.it@gmail.com';
+    $to = 'veratravel68@gmail.com';
 
     // $to = $_POST['your-email'];
     $subject = "Book a successful tour";
