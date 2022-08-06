@@ -11,6 +11,7 @@ if (isset($_POST['send'])) {
         'Địa chỉ : ' . $_POST['address'] . ' <br> ' .
         'Lời nhắn : ' . $_POST['message'] . ' <br> ';
     $to = 'veratravel68@gmail.com';
+    // $to = 'dvtinh.it@gmail.com';
 
     // $to = $_POST['your-email'];
     $subject = "Book a successful tour";
@@ -23,6 +24,10 @@ if (isset($_POST['send'])) {
     $message_mail .= $message;
 
     $to_admin = wp_mail($to, $subject, $message_mail, $header);
+    if($to_admin){
+        header("Location: ".bloginfo('url')."/success");
+        die();
+    }
     // $to_custome = wp_mail('havantrungbdu@gmail.com',$subject,$message_mail,$header);
 }
 ?>

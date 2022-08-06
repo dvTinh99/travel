@@ -97,38 +97,38 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="nguoilon" class="form-control" id="nguoilon"
-                                        placeholder="Nhập số lượng người lớn">
+                                        value="0" placeholder="Nhập số lượng người lớn" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="treem" class="form-control" id="treem"
-                                        placeholder="Nhập số lượng trẻ em">
+                                    value="0" placeholder="Nhập số lượng trẻ em" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="embe" class="form-control" id="embe"
-                                        placeholder="Nhập số lượng em bé">
+                                    value="0" placeholder="Nhập số lượng em bé" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Họ &amp; tên">
+                                    value="0" placeholder="Họ &amp; tên" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="email" name="email" class="form-control" id="email"
-                                        placeholder="Email">
+                                        placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="phone" class="form-control" id="phone"
-                                        placeholder="Điện thoại">
+                                        placeholder="Điện thoại" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="address" class="form-control" id="address"
-                                        placeholder="Địa chỉ">
+                                        placeholder="Địa chỉ" required>
                                 </div>
                                 <div class="form-group">
                                     <textarea name="message" class="form-control" id="message"
-                                        placeholder="Nội dung"></textarea>
+                                    placeholder="Nội dung" required></textarea>
                                 </div>
                         </div>
-                        <button name="send" id="button_" style="float: right;">ĐẶT TOUR</button>
+                        <button name="send" value="send" id="button_" style="float: right;">ĐẶT TOUR</button>
                         </form>
                     </div>
                 </div>
